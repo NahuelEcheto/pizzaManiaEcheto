@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Document</title>
 </head>
@@ -26,13 +28,13 @@
 
         <main class="main">
             <div class="container-nosotros">
-                <h1>Nosotros</h1>
-                <h2>Tenemos las mejores pizzas</h2>
+                <h1 data-aos="fade-down">Nosotros</h1>
+                <h2 data-aos="fade-down">Tenemos las mejores pizzas</h2>
             </div>
             <div class="nosotros-bienvenida">
                 <div>
-                    <img src="../img/preparandoPedido.jpg" alt="preparando un pedido">
-                    <div class="texto-bienvenida">
+                    <img src="../img/preparandoPedido.jpg" data-aos="fade-right" alt="preparando un pedido">
+                    <div class="texto-bienvenida" data-aos="fade-right">
                         <h3>Bienvenidos a nuestra pizzeria</h3>
                         <p>PizzaManía es un emprendimiento gastronomico familiar. Siempre tratamos de dar el mejor
                             servicio y
@@ -42,8 +44,8 @@
             </div>
             <div class="nuestra-ubicacion">
                 <div>
-                    <img src="../img/amasando.jpg" alt="amasando pizza">
-                    <div class="texto-ubicacion">
+                    <img src="../img/amasando.jpg" data-aos="fade-left" alt="amasando pizza">
+                    <div class="texto-ubicacion" data-aos="fade-left">
                         <h3>Nuestra ubicación</h3>
                         <p>Actualmente estamos ubicados en Calle 1 al 298, ofrecemos una gran variedad de pizzas. Los
                             esperamos de martes a domingo de 12 a 16 horas y de las 20 a 00 horas.</p>
@@ -68,6 +70,11 @@
             </div>
         </footer>
     </div>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
 
 </html>

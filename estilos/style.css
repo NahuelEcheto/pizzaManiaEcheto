@@ -35,6 +35,7 @@ body{
     display: flex;
     width: 100px;
     height: 100px;
+    transition: 2s;
 }
 
 .header nav ul{
@@ -55,6 +56,10 @@ font-size: 25px;
 
 .header nav a:hover{
     color: rgb(151, 28, 28);
+}
+
+.header .logo:hover {
+    transform: rotate(360deg);
 }
 
 /*------MAIN------*/
@@ -126,6 +131,11 @@ font-size: 25px;
     background-position: top;
     background-size: 50%;
     background-repeat: no-repeat;
+    transition-duration: 2s;
+}
+
+.nuestras-pizzas:hover {
+    transform: scale(1.2);
 }
 
 .container-info .nuestras-pizzas h3 {
@@ -145,7 +155,12 @@ font-size: 25px;
     background-position: top;
     background-size: 50%;
     background-repeat: no-repeat;
+    transition-duration: 2s;
 } 
+
+.pedidos:hover {
+    transform: scale(1.2);
+}
 
 .container-info .pedidos h3 {
     font-size: 20px;
@@ -164,7 +179,12 @@ font-size: 25px;
     background-position: top;
     background-size: 50%;
     background-repeat: no-repeat;
+    transition-duration: 2s;
 } 
+
+.reserva:hover {
+    transform: scale(1.2);
+}
 
 .container-info .reserva h3 {
     font-size: 20px;
@@ -316,7 +336,7 @@ font-size: 25px;
     align-items: center;
     flex-wrap: wrap;
     width: 75%;
-    margin: 25px 0 25px 0;
+    margin: 50px 0 50px 0;
 }
 
 .pizza {
@@ -332,8 +352,8 @@ font-size: 25px;
     background-color: rgb(0, 0, 0);
     font-size: 20px;
     text-align: center;
-    border-radius: 22px;
-    width: 190px;
+    width: 220px;
+    margin: 0 50px 0 40px;
 }
 
 .pizza1 {
@@ -470,6 +490,12 @@ font-size: 25px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #F0A500;
+    transition-duration: 2s;
+}
+
+.promo1:hover {
+    transform: scale(1.2);
+    background-color: #E45826;
 }
 
 .promo2 {
@@ -478,6 +504,12 @@ font-size: 25px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #F0A500;
+    transition-duration: 2s;
+}
+
+.promo2:hover {
+    transform: scale(1.2);
+    background-color: #E45826;
 }
 
 .promo3 {
@@ -486,6 +518,12 @@ font-size: 25px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #F0A500;
+    transition-duration: 2s;
+}
+
+.promo3:hover {
+    transform: scale(1.2);
+    background-color: #E45826;
 }
 
 .promo4 {
@@ -494,6 +532,12 @@ font-size: 25px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #F0A500;
+    transition-duration: 2s;
+}
+
+.promo4:hover {
+    transform: scale(1.2);
+    background-color: #E45826;
 }
 
 .promociones .container-promo div h3 {
