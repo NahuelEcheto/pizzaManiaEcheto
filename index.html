@@ -5,74 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>PizzaManía</title>
 
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="header">
-            <a href="index.html"> <img class="logo" src="./img/logo.png"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./secciones/pizzas.html">Pizzas</a></li>
-                    <li><a href="./secciones/promociones.html">Promociones</a></li>
-                    <li><a href="./secciones/nosotros.html">Nosotros</a></li>
-                    <li><a href="./secciones/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./img/logo.png" class="logo" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./secciones/pizzas.html">Pizzas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./secciones/promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./secciones/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <main class="main">
-            <section class="hero">
-                <h1>PizzaManía</h1>
-                <h2>Te damos la bienvenida a nuestra pizzeria</h2>
-                <a href="./secciones/nosotros.html">¡CONOCENOS!</a>
-            </section>
-            <div class="container-info">
-                <section class="info nuestras-pizzas">
+    <main class="main">
+        <section class="hero">
+            <h1>PizzaManía</h1>
+            <h2>Te damos la bienvenida a nuestra pizzeria</h2>
+            <a href="./secciones/nosotros.html">¡CONOCENOS!</a>
+        </section>
+        <section class="container-info">
+            <div>
+                <img src="./img/pizza.png" alt="pizza animada">
+                <div>
                     <h3>Nuestras pizzas</h3>
                     <p>Te invitamos a conocer nuestros productos en la seccion pizza y tambien nuestras promos en la
-                        seccion promociones.</p>
-                </section>
-                <section class="info pedidos">
+                    seccion promociones.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/pizza-deliver.png" alt="moto delivery">
+                <div>
                     <h3>Pedidos</h3>
                     <p>Podes contactarnos en cualquiera de nuestras redes sociales para hacernos tu pedido, y te lo
-                        enviaremos lo más rapido posible.</p>
-                </section>
-                <section class="info reserva">
+                    enviaremos lo más rápido posible.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/reserva.png" alt="calendario de reservas">
+                <div>
                     <h3>Reserva</h3>
-                    <p>Para reservar alguna de nuestras mesas deberas contactarnos a travez de nuestras redes sociales.
-                    </p>
-                </section>
-            </div>
-            <section class="video-principal">
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y6MHE0-CQAs"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <p>Para reservar alguna de nuestras mesas deberas contactarnos a traves de nuestras redes sociales.</p>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+        <section class="video-principal">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y6MHE0-CQAs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
 
-        <footer class="footer">
-            <a href="index.html"> <img class="logo" src="./img/logo.png"></a>
-            <div class="derechos">
-                <h4>Todos los derechos reservados.</h4>
-            </div>
-            <div class="redes">
-                <h4>Síguenos en:</h4>
-                <div>
-                    <a href="https://www.instagram.com/?hl=es"> <img src="./img/instagram.png"></a>
-                    <a href="https://es-la.facebook.com/"> <img src="./img/facebook.png"></a>
-                    <a href="https://twitter.com/?lang=es"> <img src="./img/twitter.png"></a>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row p-2 bg-dark text-white">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div>
+                        <a href="index.html"><img class="logo rounded mx-4 d-block" src="./img/logo.png"></a>
+                    </div>
+                    <div>
+                        <p class="h3">PizzaManía</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div>
+                        <p class="h5">Síguenos en:</p>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/?hl=es" class="text-decoration-none text-secondary"><img class="redes  p-2" src="./img/instagram.png">Instagram</a>
+                    </div>
+                    <div>
+                        <a href="https://es-la.facebook.com/" class="text-decoration-none text-secondary"><img class="redes p-2" src="./img/facebook.png">Facebook</a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/?lang=es" class="text-decoration-none text-secondary"><img class="redes p-2" src="./img/twitter.png">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div>
+                        <p class="h5"> Contacto</p>
+                    </div>
+                    <div>
+                        <p class="text-secondary">Telefono: 000 0800 4433</p>
+                    </div>
+                    <div>
+                        <p class="text-secondary">Email: ventas@pizzamania.com</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 pt-4">
+                    <p class="text-white text-center">Todos los derechos reservados</p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
 </html>
