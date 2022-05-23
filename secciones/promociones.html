@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
@@ -49,28 +51,66 @@
             <h2>En esta seccion podrás encontrar nuestras promociones disponibles. Para obtener mas información,
                 visitanos o contactanos en alguna de nuestras redes sociales.</h2>
         </div>
-        <div class="promociones">
-            <div class="container-promo">
-                <div class="promo promo1">
-                    <h3>Promoción Pizzas Iguales</h3>
-                    <p>Todos los sabados y domingos llevando 2 pizzas iguales obtendran un descuento del 20%.</p>
-                </div>
-                <div class="promo promo2">
-                    <h3>Promoción Muzzarella</h3>
-                    <p>Llevando 3 pizzas muzzarella recibiras el 10% de descuento.</p>
-                </div>
-                <div class="promo promo3">
-                    <h3>Promoción Especial</h3>
-                    <p>Todos los jueves llevando 2 pizzas o más obtendras un 15% de descuento en el total.
-                    <p>
-                </div>
-                <div class="promo promo4">
-                    <h3>Promoción Viernes de Amigos</h3>
-                    <p>Todos los viernes del mes podrás reunirte con tus amigos en nuestro local y obtendran un
-                        descuento del 10%.</p>
+
+        <div class="row mx-5 mt-5">
+            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="../img/pizzaMuzzarella.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-white">
+                        <h3 class="card-title">Promoción Pizzas Iguales</h3>
+                        <p class="card-text">Todos los sabados y domingos llevando 2 pizzas iguales obtendran un
+                            descuento del 20%.</p>
+                        <a href="#" class="btn btn-secondary">Pedir</a>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="../img/pizzaMuzzarella.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-white">
+                        <h3 class="card-title">Promoción Muzzarella</h3>
+                        <p class="card-text">Llevando 3 pizzas muzzarella recibiras el 10% de descuento.</p>
+                        <a href="#" class="btn btn-secondary">Pedir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="../img/pizzaMuzzarella.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-white">
+                        <h3 class="card-title">Promoción Especial</h3>
+                        <p class="card-text">Todos los jueves llevando 2 pizzas o más obtendras un 15% de descuento en
+                            el total.</p>
+                        <a href="#" class="btn btn-secondary">Pedir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="../img/pizzaMuzzarella.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-white">
+                        <h3 class="card-title">Promoción Viernes de Amigos</h3>
+                        <p class="card-text">Todos los viernes del mes podrás reunirte con tus amigos en nuestro local y
+                            obtendran un descuento del 10%.</p>
+                        <a href="#" class="btn btn-secondary">Pedir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="../img/pizzaMuzzarella.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-white">
+                        <h3 class="card-title">Promoción Rúcula</h3>
+                        <p class="card-text">Todos los miércoles llevando una o más pizzas de rúcula con jamón crudo obtendrás un 15% de descuento
+                            del total.</p>
+                        <a href="#" class="btn btn-secondary">Pedir</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -119,6 +159,10 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

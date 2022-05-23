@@ -131,6 +131,10 @@ body{
 
 /*------FOOTER------*/
 
+.footer {
+    margin-top: 40px;
+}
+
 .redes {
     width: 40px;
     height: 40px;
@@ -139,9 +143,9 @@ body{
 
 /*------MQ------*/
 
-@media screen and (max-width: 771px) {
+@media (max-width: 768px) {
     .main .hero h1 {
-        font-size: 65px;
+        font-size: 60px;
     }
     .main .hero h2 {
         font-size: 20px;
@@ -151,7 +155,7 @@ body{
     }
 }
 
-@media screen and (max-width: 635px) {
+@media (max-width: 576px) {
     .hero h1 {
         font-size: 50px;
         margin-bottom: 30px;
@@ -160,9 +164,6 @@ body{
         font-size: 15px;
         margin-bottom: 10px;
     }
-}
-
-@media screen and (max-width: 569px) {
     .video-principal iframe {
         width: 100%;
     }
@@ -270,7 +271,7 @@ body{
 
 /*------MQ------*/
 
-@media screen and (max-width: 724px) {
+@media (max-width: 768px) {
     .titulo-menu h1 {
         font-size: 50px;
     }
@@ -306,125 +307,24 @@ body{
     margin: 10px 150px 20px 150px;
 }
 
-.main .promociones {
-    background-color: #444444;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: main;
-    margin: 60px 0 60px 0;
-}
-
-.main .promociones .container-promo {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 3rem 0 3rem 0;
-    padding: 10px;
-}
-
-.main .promociones .container-promo .promo {
-    width: 200px;
-    height: 400px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    border-radius: 15px;
-    border: 0 solid #F0A500;
-    margin: 5px;
-}
-
-.promo1 {
-    background-image: url("../img/pizzaMuzzarella.png");
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
+.main .row .card {
     background-color: #F0A500;
-    transition-duration: 2s;
 }
 
-.promo1:hover {
-    transform: scale(1.2);
+.main .row .card .btn {
     background-color: #E45826;
 }
 
-.promo2 {
-    background-image: url("../img/pizzaMuzzarella.png");
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: #F0A500;
-    transition-duration: 2s;
-}
-
-.promo2:hover {
-    transform: scale(1.2);
-    background-color: #E45826;
-}
-
-.promo3 {
-    background-image: url("../img/pizzaMuzzarella.png");
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: #F0A500;
-    transition-duration: 2s;
-}
-
-.promo3:hover {
-    transform: scale(1.2);
-    background-color: #E45826;
-}
-
-.promo4 {
-    background-image: url("../img/pizzaMuzzarella.png");
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: #F0A500;
-    transition-duration: 2s;
-}
-
-.promo4:hover {
-    transform: scale(1.2);
-    background-color: #E45826;
-}
-
-.promociones .container-promo div h3 {
-    color: white;
-    font-size: 22px;
-    text-align: center;
-    margin-top: 33px;
-}
-
-.promociones .container-promo div p {
-    color: white;
-    font-size: 20px;
-    width: 190px;
-    text-align: center;
-    margin: 15px 0 5px 0;
-}
 
 /*------MQ------*/
 
-@media screen and (max-width: 725px) {
+@media (max-width: 768px) {
     .titulo-promocion h1 {
         font-size: 50px;
     }
     .titulo-promocion h2 {
         font-size: 15px;
         margin: 10px 60px 20px 60px;
-    }
-}
-
-@media screen and (max-width: 542px) {
-    .titulo-promocion h1 {
-        font-size: 35px;
-    }
-    .titulo-promocion h2 {
-        font-size: 15px;
-        margin: 10px 30px 20px 30px;
     }
 }
 
@@ -474,7 +374,8 @@ body{
 }
 
 .nosotros-bienvenida div .texto-bienvenida {
-    margin: 55px;
+    margin: 10px 70px 20px 70px;
+    text-align: center;
 }
 
 .nosotros-bienvenida div .texto-bienvenida h3 {
@@ -501,7 +402,8 @@ body{
 }
 
 .nuestra-ubicacion div .texto-ubicacion {
-    margin: 55px;
+    margin: 10px 70px 20px 70px;
+    text-align: center;
 }
 
 .nuestra-ubicacion div .texto-ubicacion h3 {
@@ -516,18 +418,7 @@ body{
 
 /*------MQ------*/
 
-@media screen and (max-width: 1340px) {
-    .nosotros-bienvenida div .texto-bienvenida {
-        text-align: center;
-        margin: 10px 70px 20px 70px;
-    }
-    .nuestra-ubicacion div .texto-ubicacion {
-        text-align: center;
-        margin: 10px 70px 20px 70px;
-    }
-}
-
-@media screen and (max-width: 1178px) {
+@media (max-width: 1200px) {
     .nosotros-bienvenida div {
         flex-direction: column;
     }
@@ -536,7 +427,7 @@ body{
     }
 }
 
-@media screen and (max-width: 717px) {
+@media (max-width: 768px) {
     .container-nosotros h1 {
         font-size: 50px;
     }
@@ -547,19 +438,19 @@ body{
         width: 100%;
     }
     .nosotros-bienvenida div .texto-bienvenida h3 {
-        font-size: 20px;
+        font-size: 25px;
     }
     .nosotros-bienvenida div .texto-bienvenida p {
-        font-size: 15px;
+        font-size: 18px;
     }
     .main .nuestra-ubicacion div img {
         width: 100%;
     }
     .nuestra-ubicacion div .texto-ubicacion h3 {
-        font-size: 20px;
+        font-size: 25px;
     }
     .nuestra-ubicacion div .texto-ubicacion p {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -591,9 +482,14 @@ body{
 .main .contacto {
     margin: 10px 0 50px 30px;
 }
+
+.main .contacto .btn {
+    color: white;
+    background-color: #E45826;
+}
 /*------MQ------*/
 
-@media screen and (max-width: 745px) {
+@media (max-width: 768px) {
     .titulo-contacto h1 {
         font-size: 45px;
     }
@@ -603,7 +499,7 @@ body{
     }
 }
 
-@media screen and (max-width: 582px) {
+@media (max-width: 576px) {
     .titulo-contacto h1 {
         font-size: 30px;
     }
