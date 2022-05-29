@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/styles.css">
     <title>PizzaManía</title>
 
 </head>
@@ -46,9 +48,9 @@
 
     <main class="main">
         <section class="hero">
-            <h1>PizzaManía</h1>
-            <h2>Te damos la bienvenida a nuestra pizzeria</h2>
-            <a href="./secciones/nosotros.html">¡CONOCENOS!</a>
+            <h1 data-aos="fade-up">PizzaManía</h1>
+            <h2 data-aos="fade-up">Te damos la bienvenida a nuestra pizzeria</h2>
+            <a href="./secciones/nosotros.html" data-aos="fade-up">¡CONOCENOS!</a>
         </section>
         <section class="container-info">
             <div>
@@ -88,15 +90,15 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row p-2 bg-dark text-white">
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="col-xs-12 col-md-6 col-lg-4">
                     <div>
-                        <a href="index.html"><img class="logo rounded mx-4 d-block" src="./img/logo.png"></a>
+                        <a href="index.html"><img class="logo rounded mx-4 d-block w-25 h-25" src="./img/logo.png"></a>
                     </div>
                     <div>
                         <p class="h3">PizzaManía</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="col-xs-12 col-md-6 col-lg-4">
                     <div>
                         <p class="h5">Síguenos en:</p>
                     </div>
@@ -110,7 +112,7 @@
                         <a href="https://twitter.com/?lang=es" class="text-decoration-none text-secondary"><img class="redes p-2" src="./img/twitter.png">Twitter</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="col-xs-12 col-md-6 col-lg-4">
                     <div>
                         <p class="h5"> Contacto</p>
                     </div>
@@ -127,6 +129,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
