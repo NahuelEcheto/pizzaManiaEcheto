@@ -1,104 +1,147 @@
+
+
 /*------MQ/INDEX------*/
 @media (max-width: 768px) {
-    .main .hero h1 {
-        font-size: 60px;
-    }
-    .main .hero h2 {
-        font-size: 20px;
-    }
-    .main .hero a {
-        font-size: 15px;
+    .main {
+        .hero {
+            h1 {
+                font-size: 60px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            a {
+                font-size: 15px;
+            }
+        }
     }
 }
-
 @media (max-width: 576px) {
-    .hero h1 {
-        font-size: 50px;
-        margin-bottom: 30px;
-    }
-    .hero h2 {
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-    .video-principal iframe {
-        width: 100%;
+    .main {
+        .hero {
+            h1 {
+                font-size: 50px;
+                margin-bottom: 30px;
+            }
+            h2 {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+        }
+        .video-principal iframe {
+            width: 100%;
+        }
     }
 }
 
 /*------MQ/PIZZAS------*/
 @media (max-width: 768px) {
-    .titulo-menu h1 {
-        font-size: 50px;
-    }
-    .titulo-menu h2 {
-        font-size: 15px;
+    .main {
+        .titulo-menu {
+            h1 {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 15px;
+            }
+        }
     }
 }
 
 /*------MQ/PROMOCIONES------*/
 @media (max-width: 768px) {
-    .titulo-promocion h1 {
-        font-size: 50px;
-    }
-    .titulo-promocion h2 {
-        font-size: 15px;
-        margin: 10px 60px 20px 60px;
+    .main {
+        .titulo-promocion {
+            h1 {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 15px;
+                margin: 10px 60px 20px 60px;
+            }
+        }
     }
 }
 
 /*------MQ/NOSOTROS------*/
 @media (max-width: 1200px) {
-    .nosotros-bienvenida div {
-        flex-direction: column;
-    }
-    .nuestra-ubicacion div {
-        flex-direction: column;
+    .main {   
+        .nosotros-bienvenida div {
+            flex-direction: column;
+        }
+        .nuestra-ubicacion div {
+            flex-direction: column;
+        }
     }
 }
 
 @media (max-width: 768px) {
-    .container-nosotros h1 {
-        font-size: 50px;
-    }
-    .container-nosotros h2 {
-        font-size: 15px;
-    }
-    .main .nosotros-bienvenida div img {
-        width: 100%;
-    }
-    .nosotros-bienvenida div .texto-bienvenida h3 {
-        font-size: 25px;
-    }
-    .nosotros-bienvenida div .texto-bienvenida p {
-        font-size: 18px;
-    }
-    .main .nuestra-ubicacion div img {
-        width: 100%;
-    }
-    .nuestra-ubicacion div .texto-ubicacion h3 {
-        font-size: 25px;
-    }
-    .nuestra-ubicacion div .texto-ubicacion p {
-        font-size: 18px;
+    .main {
+        .container-nosotros {
+            h1 {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 15px;
+            }
+        }
+        .nosotros-bienvenida {
+            div {
+                img {
+                    width: 100%;
+                }
+                .texto-bienvenida {
+                    h3 {
+                        font-size: 25px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .nuestra-ubicacion {
+            div {
+                img {
+                    width: 100%;
+                }
+                .texto-ubicacion {
+                    h3 {
+                        font-size: 25px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
     }
 }
 
 /*------MQ/CONTACTO------*/
 @media (max-width: 768px) {
-    .titulo-contacto h1 {
-        font-size: 45px;
-    }
-    .titulo-contacto p {
-        font-size: 15px;
-        margin: 10px 60px 60px 60px;
+    .main {
+        .titulo-contacto {
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 15px;
+                margin: 10px 60px 60px 60px;
+            }
+        }
     }
 }
 
 @media (max-width: 576px) {
-    .titulo-contacto h1 {
-        font-size: 30px;
-    }
-    .titulo-contacto p {
-        margin: 10px 20px 40px 20px;
+    .main {
+        .titulo-contacto {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                margin: 10px 20px 40px 20px;
+            }
+        }
     }
 }

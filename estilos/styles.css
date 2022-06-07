@@ -236,46 +236,34 @@ body {
   margin: 0 50px 0 40px;
 }
 
-.main .menu .container-pizza .pizza1 {
+.main .menu .container-pizza .mi, .main .menu .container-pizza .mi--pizza1, .main .menu .container-pizza .mi--pizza2, .main .menu .container-pizza .mi--pizza3, .main .menu .container-pizza .mi--pizza4, .main .menu .container-pizza .mi--pizza5, .main .menu .container-pizza .mi--pizza6 {
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+.main .menu .container-pizza .mi--pizza1 {
   background-image: url("../img/pizzaMuzzarella.png");
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 1rem;
 }
 
-.main .menu .container-pizza .pizza2 {
+.main .menu .container-pizza .mi--pizza2 {
   background-image: url("../img/pizzaBordeRelleno.jfif");
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 1rem;
 }
 
-.main .menu .container-pizza .pizza3 {
+.main .menu .container-pizza .mi--pizza3 {
   background-image: url("../img/pizzaNapolitana.jfif");
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 1rem;
 }
 
-.main .menu .container-pizza .pizza4 {
+.main .menu .container-pizza .mi--pizza4 {
   background-image: url("../img/pizzaCalabresa.jpg");
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 1rem;
 }
 
-.main .menu .container-pizza .pizza5 {
+.main .menu .container-pizza .mi--pizza5 {
   background-image: url("../img/pizzaRucula.png");
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 1rem;
 }
 
-.main .menu .container-pizza .pizza6 {
+.main .menu .container-pizza .mi--pizza6 {
   background-image: url("../img/pizzaCaprese.jpg");
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 1rem;
 }
 
 /*------PROMOCIONES------*/
@@ -354,6 +342,11 @@ body {
   margin-bottom: 50px;
 }
 
+.main .medida {
+  height: 400px;
+  width: 600px;
+}
+
 .main .nosotros-bienvenida > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,8 +357,6 @@ body {
 }
 
 .main .nosotros-bienvenida img {
-  width: 600px;
-  height: 400px;
   border-radius: 20px;
   margin: 20px;
 }
@@ -399,8 +390,6 @@ body {
 }
 
 .main .nuestra-ubicacion img {
-  width: 600px;
-  height: 400px;
   border-radius: 20px;
   margin: 20px;
 }
@@ -449,6 +438,39 @@ body {
   background-color: #E45826;
 }
 
+.main .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .map .btn--instagram {
+  background-color: #FD1D1D;
+  border: 2px solid black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  margin: 15px;
+}
+
+.main .map .btn--facebook {
+  background-color: #3a5795;
+  border: 2px solid black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  margin: 15px;
+}
+
+.main .map .btn--twitter {
+  background-color: #55acee;
+  border: 2px solid black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  margin: 15px;
+}
+
 /*------FOOTER------*/
 .footer {
   margin-top: 40px;
@@ -473,35 +495,35 @@ body {
 }
 
 @media (max-width: 576px) {
-  .hero h1 {
+  .main .hero h1 {
     font-size: 50px;
     margin-bottom: 30px;
   }
-  .hero h2 {
+  .main .hero h2 {
     font-size: 15px;
     margin-bottom: 10px;
   }
-  .video-principal iframe {
+  .main .video-principal iframe {
     width: 100%;
   }
 }
 
 /*------MQ/PIZZAS------*/
 @media (max-width: 768px) {
-  .titulo-menu h1 {
+  .main .titulo-menu h1 {
     font-size: 50px;
   }
-  .titulo-menu h2 {
+  .main .titulo-menu h2 {
     font-size: 15px;
   }
 }
 
 /*------MQ/PROMOCIONES------*/
 @media (max-width: 768px) {
-  .titulo-promocion h1 {
+  .main .titulo-promocion h1 {
     font-size: 50px;
   }
-  .titulo-promocion h2 {
+  .main .titulo-promocion h2 {
     font-size: 15px;
     margin: 10px 60px 20px 60px;
   }
@@ -509,13 +531,13 @@ body {
 
 /*------MQ/NOSOTROS------*/
 @media (max-width: 1200px) {
-  .nosotros-bienvenida div {
+  .main .nosotros-bienvenida div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .nuestra-ubicacion div {
+  .main .nuestra-ubicacion div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -524,48 +546,48 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container-nosotros h1 {
+  .main .container-nosotros h1 {
     font-size: 50px;
   }
-  .container-nosotros h2 {
+  .main .container-nosotros h2 {
     font-size: 15px;
   }
   .main .nosotros-bienvenida div img {
     width: 100%;
   }
-  .nosotros-bienvenida div .texto-bienvenida h3 {
+  .main .nosotros-bienvenida div .texto-bienvenida h3 {
     font-size: 25px;
   }
-  .nosotros-bienvenida div .texto-bienvenida p {
+  .main .nosotros-bienvenida div .texto-bienvenida p {
     font-size: 18px;
   }
   .main .nuestra-ubicacion div img {
     width: 100%;
   }
-  .nuestra-ubicacion div .texto-ubicacion h3 {
+  .main .nuestra-ubicacion div .texto-ubicacion h3 {
     font-size: 25px;
   }
-  .nuestra-ubicacion div .texto-ubicacion p {
+  .main .nuestra-ubicacion div .texto-ubicacion p {
     font-size: 18px;
   }
 }
 
 /*------MQ/CONTACTO------*/
 @media (max-width: 768px) {
-  .titulo-contacto h1 {
+  .main .titulo-contacto h1 {
     font-size: 45px;
   }
-  .titulo-contacto p {
+  .main .titulo-contacto p {
     font-size: 15px;
     margin: 10px 60px 60px 60px;
   }
 }
 
 @media (max-width: 576px) {
-  .titulo-contacto h1 {
+  .main .titulo-contacto h1 {
     font-size: 30px;
   }
-  .titulo-contacto p {
+  .main .titulo-contacto p {
     margin: 10px 20px 40px 20px;
   }
 }

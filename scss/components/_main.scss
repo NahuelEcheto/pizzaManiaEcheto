@@ -1,3 +1,5 @@
+@import "../base/variable";
+
 /*------INDEX------*/
 .main {
     background-color: $colorFondo;
@@ -78,7 +80,6 @@
     }
 }
 
-
 /*------PIZZAS------*/
 .main {
     .titulo-menu {
@@ -126,41 +127,34 @@
                     margin: 0 50px 0 40px;
                 }
             }
-            .pizza1 {
+            .mi {
+                background-position: center;
+                background-size: cover;
+                margin-bottom: 1rem;
+            }
+            .mi--pizza1 {
                 background-image: url("../img/pizzaMuzzarella.png");
-                background-position: center;
-                background-size: cover;
-                margin-bottom: 1rem;
+                @extend.mi
             }
-            .pizza2 {
+            .mi--pizza2 {
                 background-image: url("../img/pizzaBordeRelleno.jfif");
-                background-position: center;
-                background-size: cover;
-                margin-bottom: 1rem;
+                @extend.mi
             }
-            .pizza3 {
+            .mi--pizza3 {
                 background-image: url("../img/pizzaNapolitana.jfif");
-                background-position: center;
-                background-size: cover;
-                margin-bottom: 1rem;
+                @extend.mi
             }
-            .pizza4 {
+            .mi--pizza4 {
                 background-image: url("../img/pizzaCalabresa.jpg");
-                background-position: center;
-                background-size: cover;
-                margin-bottom: 1rem;
+                @extend.mi
             }
-            .pizza5 {
+            .mi--pizza5 {
                 background-image: url("../img/pizzaRucula.png");
-                background-position: center;
-                background-size: cover;
-                margin-bottom: 1rem;
+                @extend.mi
             }
-            .pizza6 {
+            .mi--pizza6 {
                 background-image: url("../img/pizzaCaprese.jpg");
-                background-position: center;
-                background-size: cover;
-                margin-bottom: 1rem;
+                @extend.mi
             }
         }
     }
@@ -226,14 +220,19 @@
             margin-bottom: 50px;
         }
     }
+    @mixin sizes ($width, $height) {
+        height: $height;
+        width: $width;
+    }
+    .medida {
+        @include sizes (600px, 400px)
+    }
     .nosotros-bienvenida {
         > div {
             display: flex;
             align-items: center;
         }
         img {
-            width: 600px;
-            height: 400px;
             border-radius: 20px;
             margin: 20px;
         }
@@ -259,8 +258,6 @@
             align-items: center;
         }
         img {
-            width: 600px;
-            height: 400px;
             border-radius: 20px;
             margin: 20px;
         }
@@ -280,6 +277,7 @@
         }
     }
 }
+
 
 /*------CONTACTO------*/
 .main {
@@ -304,6 +302,24 @@
         .btn {
             color: white;
             background-color: $colorOrange;
+        }
+    }
+    .map {
+        display: flex;
+        justify-content: center;
+            $redes:(
+            instagram: #FD1D1D,
+            facebook: #3a5795,
+            twitter: #55acee, 
+            );
+        @each $red, $color in $redes {
+            .btn--#{$red}{
+                background-color: $color;
+                border: 2px solid black;
+                color: white;
+                padding: 10px 15px 10px 15px;
+                margin: 15px;
+            }
         }
     }
 }
