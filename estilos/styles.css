@@ -89,6 +89,10 @@ body {
   font-size: 20px;
 }
 
+.main .hero a:hover {
+  background-color: #E45826;
+}
+
 .main .container-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,19 +225,23 @@ body {
 .main .menu .container-pizza .pizza {
   width: 300px;
   height: 300px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.23), 0 6px 6px rgba(0, 0, 0, 0.27);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.23), 0 6px 6px rgba(0, 0, 0, 0.27);
   border-radius: 20px;
   border: 0 solid black;
+}
+
+.main .menu .container-pizza .pizza:hover {
+  border: 2px solid #E45826;
 }
 
 .main .menu .container-pizza .pizza p {
   color: white;
   background-color: black;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  width: 220px;
-  margin: 0 50px 0 40px;
+  width: 260px;
+  margin: 0 50px 0 20px;
 }
 
 .main .menu .container-pizza .mi, .main .menu .container-pizza .mi--pizza1, .main .menu .container-pizza .mi--pizza2, .main .menu .container-pizza .mi--pizza3, .main .menu .container-pizza .mi--pizza4, .main .menu .container-pizza .mi--pizza5, .main .menu .container-pizza .mi--pizza6 {
@@ -300,6 +308,14 @@ body {
 
 .main .row .card .btn {
   background-color: #E45826;
+  border: 2px solid #E45826;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .row .card .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*------NOSOTROS------*/
@@ -364,11 +380,15 @@ body {
 .main .nosotros-bienvenida div .texto-bienvenida {
   margin: 10px 70px 20px 70px;
   text-align: center;
+  background-color: #F0A500;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .main .nosotros-bienvenida div .texto-bienvenida h3 {
   font-size: 30px;
   margin-bottom: 5px;
+  color: #E45826;
 }
 
 .main .nosotros-bienvenida div .texto-bienvenida p {
@@ -397,11 +417,15 @@ body {
 .main .nuestra-ubicacion div .texto-ubicacion {
   margin: 10px 70px 20px 70px;
   text-align: center;
+  background-color: #F0A500;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .main .nuestra-ubicacion div .texto-ubicacion h3 {
   font-size: 30px;
   margin-bottom: 5px;
+  color: #E45826;
 }
 
 .main .nuestra-ubicacion div .texto-ubicacion p {
@@ -411,7 +435,7 @@ body {
 
 /*------CONTACTO------*/
 .main .titulo-contacto {
-  background-color: #E45826;
+  background-color: #F0A500;
   padding: 5px;
 }
 
@@ -429,46 +453,29 @@ body {
   margin: 10px 120px 60px 120px;
 }
 
-.main .contacto {
-  margin: 10px 0 50px 30px;
-}
-
-.main .contacto .btn {
-  color: white;
-  background-color: #E45826;
-}
-
-.main .map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main .contacto .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 20px 40px 190px;
+  color: white;
+  background-color: #E45826;
+  border-radius: 20px;
 }
 
-.main .map .btn--instagram {
-  background-color: #FD1D1D;
-  border: 2px solid black;
-  color: white;
-  padding: 10px 15px 10px 15px;
-  margin: 15px;
+.main .contacto .row .btn {
+  background-color: #F0A500;
+  border: #F0A500;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.main .map .btn--facebook {
-  background-color: #3a5795;
-  border: 2px solid black;
-  color: white;
-  padding: 10px 15px 10px 15px;
-  margin: 15px;
-}
-
-.main .map .btn--twitter {
-  background-color: #55acee;
-  border: 2px solid black;
-  color: white;
-  padding: 10px 15px 10px 15px;
-  margin: 15px;
+.main .contacto .row .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*------FOOTER------*/
