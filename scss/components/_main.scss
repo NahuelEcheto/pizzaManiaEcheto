@@ -1,6 +1,5 @@
 @import "../base/variable";
 
-/*------INDEX------*/
 .main {
     background-color: $colorFondo;
     grid-area: main;
@@ -61,7 +60,7 @@
             border-radius: 15px;
             border: 4px solid grey;
             background-color: grey;
-            margin: 5px;
+            margin: 25px;
             transition: 1s;
             &:hover {
                 transform: scale(1.1);
@@ -83,7 +82,7 @@
     }
 }
 
-/*------PIZZAS------*/
+
 .main {
     .titulo-menu {
         background-color: $colorYellow;
@@ -122,7 +121,7 @@
                 border-radius: 20px;
                 border: 0 solid black;
                 &:hover {
-                    border: 2px solid $colorOrange;
+                    transform: scale(1.1);
                 }
                 p {
                     color: white;
@@ -139,15 +138,15 @@
                 margin-bottom: 1rem;
             }
             .mi--pizza1 {
-                background-image: url("../img/pizzaMuzzarella.png");
+                background-image: url("../img/pizzaMuzzarella.jpg");
                 @extend.mi
             }
             .mi--pizza2 {
-                background-image: url("../img/pizzaBordeRelleno.jfif");
+                background-image: url("../img/pizzaBordeRelleno.jpg");
                 @extend.mi
             }
             .mi--pizza3 {
-                background-image: url("../img/pizzaNapolitana.jfif");
+                background-image: url("../img/pizzaNapolitana.jpg");
                 @extend.mi
             }
             .mi--pizza4 {
@@ -155,7 +154,7 @@
                 @extend.mi
             }
             .mi--pizza5 {
-                background-image: url("../img/pizzaRucula.png");
+                background-image: url("../img/pizzaRucula.jpg");
                 @extend.mi
             }
             .mi--pizza6 {
@@ -166,7 +165,7 @@
     }
 }
 
-/*------PROMOCIONES------*/
+
 .main {
     .titulo-promocion {
         display: flex;
@@ -187,22 +186,23 @@
             margin: 10px 150px 20px 150px;
         }
     }
-    .row {
-        .card {
-            background-color: $colorYellow;
-            .btn {
-                background-color: $colorOrange;
-                border: 2px solid $colorOrange;
-                transition: 1s;
-                &:hover {
-                    transform: scale(1.1);
+    .cards {
+        .row {
+            .card {
+                background-color: $colorYellow;
+                .btn {
+                    background-color: $colorOrange;
+                    border: 2px solid $colorOrange;
+                    transition: 1s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
     }
 }
 
-/*------NOSOTROS------*/
 
 .main {
     .container-nosotros {
@@ -221,8 +221,8 @@
         font-size: 20px;
         h1 {
             text-align: center;
-    font-size: 70px;
-    color: white;
+            font-size: 70px;
+            color: white;
         }
         h2 {
             text-align: center;
@@ -298,7 +298,6 @@
 }
 
 
-/*------CONTACTO------*/
 .main {
     .titulo-contacto {
         background-color: $colorYellow;
@@ -317,10 +316,13 @@
         }
     }
     .contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
         .row {
             justify-content: center;
             align-items: center;
-            margin: 40px 20px 40px 190px;
             color: white;
             background-color: $colorOrange;
             border-radius: 20px;

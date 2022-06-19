@@ -20,7 +20,6 @@ body {
       grid-template-areas: "header header" "main main" "footer footer";
 }
 
-/*------HEADER------*/
 .header .logo {
   width: 80px;
   height: 80px;
@@ -35,7 +34,6 @@ body {
   background-color: darkred;
 }
 
-/*------INDEX------*/
 .main {
   background-color: #444444;
   -ms-grid-row: 2;
@@ -135,7 +133,7 @@ body {
   border-radius: 15px;
   border: 4px solid grey;
   background-color: grey;
-  margin: 5px;
+  margin: 25px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -169,7 +167,6 @@ body {
   background-color: black;
 }
 
-/*------PIZZAS------*/
 .main .titulo-menu {
   background-color: #F0A500;
   padding: 5px;
@@ -232,7 +229,8 @@ body {
 }
 
 .main .menu .container-pizza .pizza:hover {
-  border: 2px solid #E45826;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main .menu .container-pizza .pizza p {
@@ -251,15 +249,15 @@ body {
 }
 
 .main .menu .container-pizza .mi--pizza1 {
-  background-image: url("../img/pizzaMuzzarella.png");
+  background-image: url("../img/pizzaMuzzarella.jpg");
 }
 
 .main .menu .container-pizza .mi--pizza2 {
-  background-image: url("../img/pizzaBordeRelleno.jfif");
+  background-image: url("../img/pizzaBordeRelleno.jpg");
 }
 
 .main .menu .container-pizza .mi--pizza3 {
-  background-image: url("../img/pizzaNapolitana.jfif");
+  background-image: url("../img/pizzaNapolitana.jpg");
 }
 
 .main .menu .container-pizza .mi--pizza4 {
@@ -267,14 +265,13 @@ body {
 }
 
 .main .menu .container-pizza .mi--pizza5 {
-  background-image: url("../img/pizzaRucula.png");
+  background-image: url("../img/pizzaRucula.jpg");
 }
 
 .main .menu .container-pizza .mi--pizza6 {
   background-image: url("../img/pizzaCaprese.jpg");
 }
 
-/*------PROMOCIONES------*/
 .main .titulo-promocion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,23 +299,22 @@ body {
   margin: 10px 150px 20px 150px;
 }
 
-.main .row .card {
+.main .cards .row .card {
   background-color: #F0A500;
 }
 
-.main .row .card .btn {
+.main .cards .row .card .btn {
   background-color: #E45826;
   border: 2px solid #E45826;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.main .row .card .btn:hover {
+.main .cards .row .card .btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-/*------NOSOTROS------*/
 .main .container-nosotros {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.466)), to(rgba(0, 0, 0, 0.473))), url(../img/asientos.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.473)), url(../img/asientos.jpg);
@@ -433,7 +429,6 @@ body {
   font-size: 20px;
 }
 
-/*------CONTACTO------*/
 .main .titulo-contacto {
   background-color: #F0A500;
   padding: 5px;
@@ -453,6 +448,19 @@ body {
   margin: 10px 120px 60px 120px;
 }
 
+.main .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
 .main .contacto .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -460,7 +468,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px 20px 40px 190px;
   color: white;
   background-color: #E45826;
   border-radius: 20px;
@@ -478,9 +485,13 @@ body {
           transform: scale(1.1);
 }
 
-/*------FOOTER------*/
 .footer {
   margin-top: 40px;
+}
+
+.footer .logo {
+  width: 80px;
+  height: 80px;
 }
 
 .footer .redes {
@@ -488,7 +499,6 @@ body {
   height: 40px;
 }
 
-/*------MQ/INDEX------*/
 @media (max-width: 768px) {
   .main .hero h1 {
     font-size: 60px;
@@ -498,6 +508,9 @@ body {
   }
   .main .hero a {
     font-size: 15px;
+  }
+  .main .container-info div img {
+    margin-top: 10px;
   }
 }
 
@@ -510,12 +523,15 @@ body {
     font-size: 15px;
     margin-bottom: 10px;
   }
+  .main .container-info div img {
+    width: 95px;
+    height: 95px;
+  }
   .main .video-principal iframe {
     width: 100%;
   }
 }
 
-/*------MQ/PIZZAS------*/
 @media (max-width: 768px) {
   .main .titulo-menu h1 {
     font-size: 50px;
@@ -525,7 +541,20 @@ body {
   }
 }
 
-/*------MQ/PROMOCIONES------*/
+@media (max-width: 576px) {
+  .main .menu .container-pizza {
+    width: 40%;
+  }
+  .main .menu .container-pizza .pizza {
+    width: 200px;
+    height: 200px;
+  }
+  .main .menu .container-pizza .pizza p {
+    width: 160px;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .main .titulo-promocion h1 {
     font-size: 50px;
@@ -534,9 +563,19 @@ body {
     font-size: 15px;
     margin: 10px 60px 20px 60px;
   }
+  .main .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-/*------MQ/NOSOTROS------*/
 @media (max-width: 1200px) {
   .main .nosotros-bienvenida div {
     -webkit-box-orient: vertical;
@@ -579,7 +618,6 @@ body {
   }
 }
 
-/*------MQ/CONTACTO------*/
 @media (max-width: 768px) {
   .main .titulo-contacto h1 {
     font-size: 45px;

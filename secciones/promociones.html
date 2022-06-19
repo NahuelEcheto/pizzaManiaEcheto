@@ -10,9 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
-    <meta name="keywords" content="PizzaManía, pizzería, promociones,delivery, pizza, pedir, festejar, reservar, ">
-    <meta name="description" content="En esta sección podrás encontrar todas las promociones disponibles que ofrece la pizzería PizzaManía. Accede en esta sección para encargar cualquier Promoción. ">
-    <title>PizzaMania - Promociones</title>
+    <meta name="keywords" content="PizzaManía, pizzería, promociones,delivery, pizza, pedir, festejar, reservar">
+    <meta name="description"
+        content="En esta sección podrás encontrar todas las promociones disponibles que ofrece la pizzería PizzaManía. Accede a esta sección para encargar cualquier Promoción.">
+    <title>PizzaManía - Promociones</title>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon bg-warning"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse sm-flex justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
@@ -48,128 +49,144 @@
     </header>
 
     <main class="main">
-        <div class="titulo-promocion">
-            <h1>Promociones</h1>
-            <h2>En esta seccion podrás encontrar nuestras promociones disponibles. Para obtener mas información,
-                visitanos o contactanos en alguna de nuestras redes sociales.</h2>
-        </div>
+        <section>
+            <div class="titulo-promocion">
+                <h1>Promociones</h1>
+                <h2>En esta seccion podrás encontrar nuestras promociones disponibles. Para obtener mas información,
+                    visitanos o contactanos en alguna de nuestras redes sociales.</h2>
+            </div>
+        </section>
 
-        <div class="row mx-5 mt-5">
-            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="../img/promoIgual.png" class="card-img-top p-3 h-100 w-100 mx-auto" alt="iconos de pizzas">
-                    <div class="card-body text-center text-white">
-                        <h3 class="card-title">Promoción Pizzas Iguales</h3>
-                        <p class="card-text">Todos los sabados y domingos llevando 2 pizzas iguales obtendran un
-                            descuento del 20%.</p>
-                        <a href="#" class="btn btn-secondary">Pedir</a>
+        <section class="cards">
+            <div class="row mx-5 mt-5">
+                <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="../img/promoIgual.png" class="card-img-top p-3 h-100 w-100 mx-auto"
+                            alt="iconos de pizzas">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title">Promoción Pizzas Iguales</h3>
+                            <p class="card-text">Todos los sabados y domingos llevando 2 pizzas iguales obtendran un
+                                descuento del 20%.</p>
+                            <a href="#" class="btn text-white">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="../img/promoMuzza.png" class="card-img-top p-3 h-50 w-50 mx-auto"
+                            alt="icono de pizza">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title">Promoción Muzzarella</h3>
+                            <p class="card-text">Llevando 3 pizzas muzzarella recibiras el 10% de descuento en el total
+                                de la compra.</p>
+                            <a href="#" class="btn text-white">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="../img/promoEspecial.png" class="card-img-top p-3 h-50 w-50 mx-auto"
+                            alt="porcion de pizza">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title">Promoción de Especial</h3>
+                            <p class="card-text">Todos los jueves llevando 2 pizzas o más obtendras un 15% de descuento
+                                en el total.</p>
+                            <a href="#" class="btn text-white">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="../img/promoAmigo.png" class="card-img-top p-3 h-50 w-50 mx-auto"
+                            alt="reunion de amigos">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title">Promoción Viernes de Amigos</h3>
+                            <p class="card-text">Todos los viernes del mes reunite con tus amigos en nuestro local y
+                                obtendran un descuento del 10%.</p>
+                            <a href="#" class="btn text-white">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="../img/promoRucula.png" class="card-img-top p-3 h-50 w-50 mx-auto"
+                            alt="pizza con rucula">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title">Promoción de Rúcula</h3>
+                            <p class="card-text">Todos los miércoles llevando pizza de rúcula con jamón crudo obtendrás
+                                un 15% de descuento.</p>
+                            <a href="#" class="btn text-white">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="../img/promoCumple.png" class="card-img-top p-3 h-50 w-50 mx-auto"
+                            alt="festejo de cumpleaños">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title">Promoción Festeja tu Cumple</h3>
+                            <p class="card-text">Festeja tu cumpleaños aquí y obtendras una pizza de regalo mas 15% de
+                                descuento en las demas.</p>
+                            <a href="#" class="btn text-white">Pedir</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="../img/promoMuzza.png" class="card-img-top p-3 h-50 w-50 mx-auto" alt="icono de pizza">
-                    <div class="card-body text-center text-white">
-                        <h3 class="card-title">Promoción Muzzarella</h3>
-                        <p class="card-text">Llevando 3 pizzas muzzarella recibiras el 10% de descuento en el total de la compra.</p>
-                        <a href="#" class="btn btn-secondary">Pedir</a>
-                    </div>
-                </div>
-            </div>
-
-            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="../img/promoEspecial.png" class="card-img-top p-3 h-50 w-50 mx-auto" alt="porcion de pizza">
-                    <div class="card-body text-center text-white">
-                        <h3 class="card-title">Promoción de Especial</h3>
-                        <p class="card-text">Todos los jueves llevando 2 pizzas o más obtendras un 15% de descuento en
-                            el total.</p>
-                        <a href="#" class="btn btn-secondary">Pedir</a>
-                    </div>
-                </div>
-            </div>
-
-            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="../img/promoAmigo.png" class="card-img-top p-3 h-50 w-50 mx-auto" alt="reunion de amigos">
-                    <div class="card-body text-center text-white">
-                        <h3 class="card-title">Promoción Viernes de Amigos</h3>
-                        <p class="card-text">Todos los viernes del mes reunite con tus amigos en nuestro local y
-                            obtendran un descuento del 10%.</p>
-                        <a href="#" class="btn btn-secondary">Pedir</a>
-                    </div>
-                </div>
-            </div>
-
-            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="../img/promoRucula.png" class="card-img-top p-3 h-50 w-50 mx-auto" alt="pizza con rucula">
-                    <div class="card-body text-center text-white">
-                        <h3 class="card-title">Promoción de Rúcula</h3>
-                        <p class="card-text">Todos los miércoles llevando pizza de rúcula con jamón crudo obtendrás un 15% de descuento.</p>
-                        <a href="#" class="btn btn-secondary">Pedir</a>
-                    </div>
-                </div>
-            </div>
-
-            <div data-aos="flip-left" class="col-xs-12 col-md-6 col-lg-4 py-3">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="../img/promoCumple.png" class="card-img-top p-3 h-50 w-50 mx-auto" alt="festejo de cumpleaños">
-                    <div class="card-body text-center text-white">
-                        <h3 class="card-title">Promoción Festeja tu Cumple</h3>
-                        <p class="card-text">Festeja tu cumpleaños aquí y obtendras una pizza de regalo mas 15% de descuento en las demas.</p>
-                        <a href="#" class="btn btn-secondary">Pedir</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container-fluid">
-            <div class="row p-2 bg-dark text-white">
-                <div class="col-xs-12 col-md-4 col-lg-4">
-                    <div>
-                        <a href="../index.html"><img class="logo rounded mx-4 d-block w-25 h-25" src="../img/logo.png"></a>
+        <section>
+            <div class="container-fluid">
+                <div class="row p-2 bg-dark text-white">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <a href="../index.html"><img class="logo rounded mx-4 d-block w-25 h-25"
+                                    src="../img/logo.png"></a>
+                        </div>
+                        <div>
+                            <p class="h3">PizzaManía</p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="h3">PizzaManía</p>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <p class="h5">Síguenos en:</p>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/?hl=es" class="text-decoration-none text-secondary"><img
+                                    class="redes  p-2" src="../img/instagram.png">Instagram</a>
+                        </div>
+                        <div>
+                            <a href="https://es-la.facebook.com/" class="text-decoration-none text-secondary"><img
+                                    class="redes p-2" src="../img/facebook.png">Facebook</a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/?lang=es" class="text-decoration-none text-secondary"><img
+                                    class="redes p-2" src="../img/twitter.png">Twitter</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-md-4 col-lg-4">
-                    <div>
-                        <p class="h5">Síguenos en:</p>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <p class="h5"> Contacto</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary">Telefono: 000 0800 4433</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary">Email: ventas@pizzamania.com</p>
+                        </div>
                     </div>
-                    <div>
-                        <a href="https://www.instagram.com/?hl=es" class="text-decoration-none text-secondary"><img
-                                class="redes  p-2" src="../img/instagram.png">Instagram</a>
+                    <div class="col-sm-12 pt-4">
+                        <p class="text-white text-center">Todos los derechos reservados</p>
                     </div>
-                    <div>
-                        <a href="https://es-la.facebook.com/" class="text-decoration-none text-secondary"><img
-                                class="redes p-2" src="../img/facebook.png">Facebook</a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/?lang=es" class="text-decoration-none text-secondary"><img
-                                class="redes p-2" src="../img/twitter.png">Twitter</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4 col-lg-4">
-                    <div>
-                        <p class="h5"> Contacto</p>
-                    </div>
-                    <div>
-                        <p class="text-secondary">Telefono: 000 0800 4433</p>
-                    </div>
-                    <div>
-                        <p class="text-secondary">Email: ventas@pizzamania.com</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 pt-4">
-                    <p class="text-white text-center">Todos los derechos reservados</p>
                 </div>
             </div>
-        </div>
+        </section>
     </footer>
 
     <script>

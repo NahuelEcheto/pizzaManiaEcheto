@@ -9,8 +9,9 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
     <meta name="keywords" content="PizzaManía, pizzería, pizza, contacto, llamar, reservar, información, delivery">
-    <meta name="description" content="En esta sección de PizzaManía encontraras nuestras redes y números de contacto para cualquier consulta o reservación.">
-    <title>PizzaMania - Contacto</title>
+    <meta name="description"
+        content="En esta sección de PizzaManía encontraras nuestras redes y números de contacto para cualquier consulta o reservación.">
+    <title>PizzaManía - Contacto</title>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon bg-warning"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse sm-flex justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
@@ -48,90 +49,95 @@
 
 
     <main class="main">
-        <div class="titulo-contacto">
-            <h1>Contacto</h1>
-            <p>¡Gracias por visitar nuestra página! Si tenes alguna duda podes contactarnos en alguna de nuestras
-                redes o podes llamarnos al número de telefono.</p>
-        </div>
-        <div class="contacto">
-            <form class="row g-3 w-75 p-5">
-                <div class="col-md-4">
-                    <label for="inputEmail4" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputName4">
-                </div>
-                <div class="col-md-4">
-                    <label for="inputPassword4" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="inputSurname4">
-                </div>
-                <div class="col-8">
-                    <label for="inputAddress" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="inputEmail" placeholder="ejemplo@gmail.com">
-                </div>
-                <div class="col-8">
-                    <label for="inputAddress2" class="form-label">Comentarios</label>
-                    <input type="text" class="form-control" id="inputComment"
-                        placeholder="Comentario">
-                </div>
-                <div class="col-8">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Recibir información de la página
-                        </label>
+        <section>
+            <div class="titulo-contacto">
+                <h1>Contacto</h1>
+                <p>¡Gracias por visitar nuestra página! Si tenes alguna duda podes contactarnos en alguna de nuestras
+                    redes o podes llamarnos al número de telefono.</p>
+            </div>
+        </section>
+        <section>
+            <div class="contacto">
+                <form class="row g-3 w-75 p-5">
+                    <div class="col-4">
+                        <label for="inputEmail4" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputName4">
                     </div>
-                </div>
-                <div class="col-8">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
-            </form>
-        </div>
+                    <div class="col-4">
+                        <label for="inputPassword4" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="inputSurname4">
+                    </div>
+                    <div class="col-8">
+                        <label for="inputAddress" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="inputEmail" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div class="col-8">
+                        <label for="inputAddress2" class="form-label">Comentarios</label>
+                        <input type="text" class="form-control" id="inputComment" placeholder="Comentario">
+                    </div>
+                    <div class="col-8">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Recibir información de la página
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <button type="submit" class="btn text-white">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container-fluid">
-            <div class="row p-2 bg-dark text-white">
-                <div class="col-xs-12 col-md-4 col-lg-4">
-                    <div>
-                        <a href="../index.html"><img class="logo rounded mx-4 d-block w-25 h-25"
-                                src="../img/logo.png"></a>
+        <section>
+            <div class="container-fluid">
+                <div class="row p-2 bg-dark text-white">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <a href="../index.html"><img class="logo rounded mx-4 d-block w-25 h-25"
+                                    src="../img/logo.png"></a>
+                        </div>
+                        <div>
+                            <p class="h3">PizzaManía</p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="h3">PizzaManía</p>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <p class="h5">Síguenos en:</p>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/?hl=es" class="text-decoration-none text-secondary"><img
+                                    class="redes  p-2" src="../img/instagram.png">Instagram</a>
+                        </div>
+                        <div>
+                            <a href="https://es-la.facebook.com/" class="text-decoration-none text-secondary"><img
+                                    class="redes p-2" src="../img/facebook.png">Facebook</a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/?lang=es" class="text-decoration-none text-secondary"><img
+                                    class="redes p-2" src="../img/twitter.png">Twitter</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-md-4 col-lg-4">
-                    <div>
-                        <p class="h5">Síguenos en:</p>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <p class="h5"> Contacto</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary">Telefono: 000 0800 4433</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary">Email: ventas@pizzamania.com</p>
+                        </div>
                     </div>
-                    <div>
-                        <a href="https://www.instagram.com/?hl=es" class="text-decoration-none text-secondary"><img
-                                class="redes  p-2" src="../img/instagram.png">Instagram</a>
+                    <div class="col-sm-12 pt-4">
+                        <p class="text-white text-center">Todos los derechos reservados</p>
                     </div>
-                    <div>
-                        <a href="https://es-la.facebook.com/" class="text-decoration-none text-secondary"><img
-                                class="redes p-2" src="../img/facebook.png">Facebook</a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/?lang=es" class="text-decoration-none text-secondary"><img
-                                class="redes p-2" src="../img/twitter.png">Twitter</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4 col-lg-4">
-                    <div>
-                        <p class="h5"> Contacto</p>
-                    </div>
-                    <div>
-                        <p class="text-secondary">Telefono: 000 0800 4433</p>
-                    </div>
-                    <div>
-                        <p class="text-secondary">Email: ventas@pizzamania.com</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 pt-4">
-                    <p class="text-white text-center">Todos los derechos reservados</p>
                 </div>
             </div>
-        </div>
+        </section>
     </footer>
 
 </body>
